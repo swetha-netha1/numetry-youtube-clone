@@ -1,0 +1,101 @@
+/* Sidebar styling */
+.sidebar {
+    background: #fff;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-left: 2%;
+    padding-top: 80px;
+}
+
+/* Shortcut links (Home to News) - Display each item in a separate line */
+.shortcut-links {
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    gap: 20px;
+    /* Space between each item */
+}
+
+/* Each side link will take full width to display on separate lines */
+.side-links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* Ensures the links take full width, stacking them vertically */
+    cursor: pointer;
+}
+
+.side-links img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Divider line */
+.sidebar hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    width: 85%;
+    margin-top: 10px;
+    /* Reduces the gap after the last link */
+}
+
+/* Subscribed section */
+.subscribedlist {
+    display: flex;
+    flex-direction: column;
+    /* Stack subscriber blocks vertically */
+    margin-top: 1px;
+    /* Reduced space between hr and Subscribed heading */
+}
+
+.subscribedlist h3 {
+    font-size: 13px;
+    margin: 10px 0;
+    /* Adjusted space to reduce gap */
+    color: #5a5a5a;
+}
+
+.side-link {
+    display: flex;
+    /* Display image and text side by side */
+    align-items: center;
+    margin-bottom: 15px;
+    /* Space between subscriber blocks */
+}
+
+.side-link img {
+    width: 25px;
+    /* Image size */
+    border-radius: 50%;
+    /* Circular image */
+    margin-right: 10px;
+    /* Space between image and name */
+}
+
+.side-link p {
+    font-size: 13px;
+    color: #5a5a5a;
+    margin: 0;
+    /* Remove extra margin */
+}
+
+.small-sidebar{
+    width: 5%;
+}
+.small-sidebar p{
+    display: none;
+}
+.small-sidebar h3{
+        display: none;
+}
+.small-sidebar hr{
+    width: 50%;
+    margin-bottom: 25px;
+}
+.side-links.active img{
+    padding-bottom: 2px;
+    border-bottom: 3px solid red;
+}

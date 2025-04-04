@@ -1,0 +1,227 @@
+/* Smaller upload modal with red/white theme */
+.upload-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.upload-modal {
+    background-color: white;
+    border-radius: 12px;
+    width: 380px;
+    /* Reduced from 500px */
+    max-width: 90%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid #ff4d4d;
+    /* Red border */
+}
+
+.upload-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    /* Reduced padding */
+    border-bottom: 1px solid #ffe6e6;
+    /* Light red border */
+    background-color: #ff3333;
+    /* Red header */
+    border-radius: 12px 12px 0 0;
+}
+
+.upload-modal-header h2 {
+    margin: 0;
+    font-size: 18px;
+    /* Smaller font */
+    color: white;
+    /* White text */
+    font-weight: 600;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    /* Smaller close button */
+    cursor: pointer;
+    color: white;
+    /* White close button */
+    padding: 4px;
+}
+
+.upload-modal-body {
+    padding: 16px;
+    /* Reduced padding */
+}
+
+.file-drop-area {
+    border: 2px dashed #ff9999;
+    /* Light red border */
+    border-radius: 8px;
+    padding: 24px;
+    /* Reduced padding */
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    background-color: #fff9f9;
+    /* Very light red background */
+}
+
+.file-drop-area:hover {
+    border-color: #ff3333;
+    background-color: #fff0f0;
+}
+
+.file-upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    /* Reduced gap */
+}
+
+.upload-icon {
+    font-size: 36px;
+    /* Smaller icon */
+    color: #ff3333;
+    /* Red icon */
+}
+
+.upload-text {
+    font-size: 14px;
+    /* Smaller text */
+    color: #666;
+}
+
+.file-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* Reduced gap */
+}
+
+.file-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff0f0;
+    /* Light red background */
+    border-radius: 6px;
+    border-left: 3px solid #ff3333;
+    /* Red accent border */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    /* Reduced gap */
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    font-weight: 500;
+    font-size: 14px;
+    color: #ff3333;
+    /* Red label */
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 6px 10px;
+    /* Reduced padding */
+    border: 1px solid #ffcccc;
+    /* Light red border */
+    border-radius: 4px;
+    font-size: 13px;
+    /* Smaller font */
+}
+
+.form-group textarea {
+    min-height: 60px;
+    /* Smaller textarea */
+    resize: vertical;
+}
+
+.upload-progress {
+    margin-top: 12px;
+    background-color: #ffe6e6;
+    /* Light red background */
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 20px;
+    /* Thinner progress bar */
+    background-color: #ff3333;
+    /* Red progress bar */
+    transition: width 0.3s;
+}
+
+.progress-text {
+    text-align: center;
+    margin-top: 4px;
+    font-size: 12px;
+    /* Smaller text */
+    color: #ff3333;
+    /* Red text */
+}
+
+.upload-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    /* Reduced gap */
+    padding: 12px 16px;
+    /* Reduced padding */
+    border-top: 1px solid #ffe6e6;
+    /* Light red border */
+}
+
+.cancel-button,
+.upload-button {
+    padding: 6px 14px;
+    /* Smaller buttons */
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 13px;
+    /* Smaller font */
+    transition: all 0.2s;
+}
+
+.cancel-button {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    color: #666;
+}
+
+.cancel-button:hover {
+    background-color: #eee;
+}
+
+.upload-button {
+    background-color: #ff3333;
+    /* Red button */
+    color: white;
+    border: none;
+}
+
+.upload-button:hover {
+    background-color: #e60000;
+    /* Darker red on hover */
+    transform: translateY(-1px);
+}
+
+.upload-button:active {
+    transform: translateY(0);
+}
